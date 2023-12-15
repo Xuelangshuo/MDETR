@@ -20,7 +20,7 @@
 ### 实验代码
 首先，从github上克隆本代码，使用以下命令：
 - git clone https://github.com/Xuelangshuo/MDETR.git
-我建议你使用Anaconda去创建一个虚拟环境：
+\n我建议你使用Anaconda去创建一个虚拟环境：
 - conda create -n mdetr python=3.7 pip
 然后激活这个虚拟环境：
 - conda activate mdetr
