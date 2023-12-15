@@ -18,24 +18,24 @@
 - cython, pycocotools, tqdm, scipy
 我建议使用上面的准确设置。如果是其他环境，应满足以下条件：Linux, Python>=3.7, CUDA>=9.2, GCC>=5.4, PyTorch>=1.5.1, TorchVision>=0.6.1。
 ### 实验代码
-首先，从github上克隆本代码，使用以下命令：
-- git clone https://github.com/Xuelangshuo/MDETR.git  
-我建议你使用Anaconda去创建一个虚拟环境：
-- conda create -n mdetr python=3.7 pip  
-然后激活这个虚拟环境：
-- conda activate mdetr  
-然后安装对应的PyTorch和TorchVision：
-- pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113  
-再然后，安装其他的要求环境：
-- conda install cython scipy tqdm
-- pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'  
-由于MDETR是在可变形DETR上开发的，因此需要编译：
-- cd MDETR
-- cd ./models/ops
-- sh ./make.sh
-- python test.py
+首先，从github上克隆本代码，使用以下命令：  
+git clone https://github.com/Xuelangshuo/MDETR.git  
+我建议你使用Anaconda去创建一个虚拟环境：  
+conda create -n mdetr python=3.7 pip  
+然后激活这个虚拟环境：  
+conda activate mdetr  
+然后安装对应的PyTorch和TorchVision：  
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113  
+再然后，安装其他的要求环境：  
+conda install cython scipy tqdm
+pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'  
+由于MDETR是在可变形DETR上开发的，因此需要编译：  
+cd MDETR  
+cd ./models/ops  
+sh ./make.sh  
+python test.py  
 ### 数据集准备
-#### MS-COCO for Few-Shot Object Detection
-- COCO 2017 dataset下载链接：https://cocodataset.org/
-### 训练
-- python -u main.py
+#### MS-COCO for Few-Shot Object Detection  
+COCO 2017 dataset下载链接：https://cocodataset.org/
+### 训练  
+python -u main.py
